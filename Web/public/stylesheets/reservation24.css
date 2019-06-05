@@ -1,0 +1,302 @@
+/*폰트선언*/
+@font-face {
+  font-family : 'nanumgothic';
+  src : url('http://121.132.130.111:3000/fonts/NanumGothic.woff') format('woff'),
+  url('http://121.132.130.111:3000/fonts/NanumGothic.eot') format('eot'),
+  url('http://121.132.130.111:3000/fonts/NanumGothic.ttf') format('truetype');
+}
+@font-face {
+  font-family : 'consolas';
+  src : url('http://121.132.130.111:3000/fonts/consolas.woff') format('woff'),
+  url('http://121.132.130.111:3000/fonts/consolas.eot') format('eot'),
+  url('http://121.132.130.111:3000/fonts/consolas.ttf') format('truetype');
+}
+
+/*전체 창 div (popup 창 크기)*/
+#totalContainer {
+  position : relative;
+  margin : auto;
+
+  width : 500px;
+  height : 600px;
+
+  border : 1px solid black;
+}
+/*스터디룸 이름 표기*/
+#roomNameText {
+  position : absolute;
+  margin : 0;
+  padding : 0;
+
+  font-family : 'nanumgothic';
+  font-size : 28px;
+  text-align : left;
+
+  top : 20px;
+  left : 20px;
+
+  width : 300px;
+}
+/*스터디룸 최소최대인원 표기*/
+#roomMinMaxPeople {
+  position : absolute;
+  margin : 0;
+  padding : 0;
+
+  font-family : 'nanumgothic';
+  font-size : 20px;
+  text-align : left;
+
+  top : 28px;
+  left : 240px;
+
+  width : 140px;
+}
+/*스터디룸 예약가능/불가능 그림*/
+#roomInfo {
+  position : absolute;
+  margin : 0;
+  padding : 0;
+
+  top : 20px;
+  left : 390px;
+
+  width : 100px;
+  height : 35px;
+
+  border : 1px solid black;
+}
+#roomInfo div {
+  position : absolute;
+  left : 10px;
+  width : 20px;
+  height : 10px;
+
+  margin : 0;
+}
+#roomInfo p {
+  font-family: 'nanumgothic';
+  font-size : 12px;
+  text-align : left;
+  line-height : 11px;
+
+  margin : 0;
+  padding : 0;
+
+  position : absolute;
+  left : 35px;
+}
+
+
+/*예약 현황 표시할 div 틀 container*/
+#roomStatusContainer {
+  position : absolute;
+  margin : 0;
+  padding : 0;
+
+  width : 480px;
+  height : 270px;
+
+  top : 70px;
+  left : 50%;
+  transform:translateX(-50%);
+
+  border : 1px solid black;
+}
+
+/* 내부 예약현황 표시 table -> td background-color 값으로 예약상태 확인, 기본으로 8일, 당일일시 today만*/
+#roomStatusTable {
+  width : 100%;
+  height : 100%;
+  margin : 0;
+
+  text-align : center;
+
+  border-collapse : collapse;
+}
+#roomStatusTable th, td {
+  border : 1px solid black;
+  font-size : 11px;
+}
+.backgroundBlue {
+  background-color : #21769f;
+  border : 1px solid black;
+}
+
+
+.rowIndex {
+}
+.dateIndex {
+}
+.timeIndex0 {
+}
+.timeIndex1 {
+}
+.timeIndex2 {
+}
+.timeIndex3 {
+}
+.timeIndex4 {
+}
+.timeIndex5 {
+}
+.timeIndex6 {
+}
+.timeIndex7 {
+}
+
+
+/*예약자 정보 표시용 div*/
+#whoDiv {
+  width : 230px;
+  height : 220px;
+
+  position : absolute;
+
+  top : 360px;
+  left : 10px;
+
+  border : 1px solid black;
+}
+/* "예약자 정보", "예약 정보 입력" p */
+.resDivText {
+  position : absolute;
+  margin : 0;
+  padding : 0;
+
+  font-size : 18px;
+  font-family : 'consolas';
+  background-color: white;
+  text-align : center;
+
+  top : -12px;
+  left : 50%;
+  transform:translateX(-50%);
+
+  width : 150px;
+}
+/* 정보 종류 표시 p */
+p.resInfoText {
+  position : absolute;
+  margin : 0;
+  padding : 0;
+
+  text-align : center;
+  line-height : 30px;
+
+  font-family : 'nanumgothic';
+  font-size : 14px;
+
+  left : 15px;
+  width : 40px;
+
+  border : 1px solid black;
+
+}
+/* 정보 표시 div */
+div.whoInfo {
+  position : absolute;
+
+  width : 150px;
+  height : 30px;
+
+  margin : 0;
+  padding : 0;
+  padding-left : 5px;
+  text-align : left;
+  line-height : 32px;
+
+  font-family : 'consolas';
+  font-size : 12px;
+
+  border : 1px solid black;
+  border-radius : 5px;
+
+  right : 10px;
+}
+
+/*form input용 div*/
+#reserveInputDiv {
+  width : 230px;
+  height : 220px;
+
+  position : absolute;
+
+  top : 360px;
+  right : 10px;
+
+  border : 1px solid black;
+}
+/*form*/
+#reserveInputForm {
+}
+.reserveInputClass {
+  position : absolute;
+
+  width : 70px;
+  height : 30px;
+  text-align: center;
+
+  font-family:'consolas';
+  font-size : 15px;
+
+  position : absolute;
+}
+/*날짜 선택 input -> today랑 +7일까지 선택 가능하게, 당일일시 today만 */
+
+/*예약 시작시간 선택 input ->  */
+/*이용시간은 최대시간으로 설정? (뒤에 예약내용 알수있으면...막기)*/
+
+/*submit 버튼 & 취소 버튼 */
+.resInputButton {
+  position : absolute;
+  cursor : pointer;
+
+  width : 100px;
+  height : 50px;
+
+  margin : 0;
+  padding : 0;
+
+  text-align : center;
+  line-height: 50px;
+
+  font-family : 'consolas';
+  font-size : 12px;
+
+  color : white;
+  background-color: #ad4141;
+  transition: background-color 0.6s ease;
+  border-style : none;
+
+  border-radius : 5px;
+}
+.resInputButton:hover {
+  background-color : #771d1d;
+}
+.resInputButton2 {
+  position : absolute;
+  cursor : pointer;
+
+  width : 100px;
+  height : 50px;
+
+  margin : 0;
+  padding : 0;
+
+  text-align : center;
+  line-height: 50px;
+
+  font-family : 'consolas';
+  font-size : 12px;
+
+  color : white;
+  background-color:  #1ea12b;
+  transition: background-color 0.6s ease;
+  border-style : none;
+
+  border-radius : 5px;
+}
+.resInputButton2:hover {
+  background-color : #0d4e0a;
+}

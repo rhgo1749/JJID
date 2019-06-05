@@ -1,0 +1,279 @@
+/*폰트선언*/
+@font-face {
+  font-family : 'nanumgothic';
+  src : url('http://121.132.130.111:3000/fonts/NanumGothic.woff') format('woff'),
+  url('http://121.132.130.111:3000/fonts/NanumGothic.eot') format('eot'),
+  url('http://121.132.130.111:3000/fonts/NanumGothic.ttf') format('truetype');
+}
+@font-face {
+  font-family : 'consolas';
+  src : url('http://121.132.130.111 :3000/fonts/consolas.woff') format('woff'),
+  url('http://121.132.130.111:3000/fonts/consolas.eot') format('eot'),
+  url('http://121.132.130.111:3000/fonts/consolas.ttf') format('truetype');
+}
+
+/*배경 사진용 Div*/
+div#adminDiv {
+  width : 800px;
+  height : 600px;
+  margin : auto;
+
+  position : relative;
+  /*
+  background-image : url("loginBackgroundDivImage.png");
+  background-position : center;
+  background-repeat : no-repeat;*/
+
+  border : 1px solid black;
+}
+/*화면 상단에 붙는 navBar*/
+div#navBar {
+  position : absolute;
+  top : 0px;
+
+  width : 100%;
+  height : 50px;
+
+  text-align : center;
+  vertical-align : middle;
+  line-height : 50px;
+
+  background-color : #333;
+}
+/*관리자모드 타이틀*/
+p.adminTitle {
+  position : absolute;
+
+  left : 50%;
+  transform:translateX(-50%);
+
+  text-align : center;
+
+  padding : 0;
+  margin : 0;
+
+  color : white;
+
+  font-family: 'nanumgothic';
+  font-size : 28px;
+}
+/*로그아웃 버튼과 hover 효과*/
+div#adminLogoutButton {
+  position : absolute;
+  top : 5px;
+  right : 10px;
+  cursor : pointer;
+
+  width : 80px;
+  height : 40px;
+
+  font-family: 'consolas';
+  text-align: center;
+  line-height:40px;
+
+  background-color : #ad4141;
+  color : white;
+}
+div#adminLogoutButton:hover {
+  background-color : #771d1d;
+}
+/*두가지 영역으로 나누기*/
+div.partitionAdminDiv {
+  position : absolute;;
+  top : 50px;
+
+  height : 550px;
+
+  margin : 0;
+  padding : 0;
+
+}
+div.subPartitionAdminDiv {
+  position : absolute;
+  width : 100%;
+  height:50%;
+
+  margin : 0;
+  padding : 0;
+
+}
+p.subPartitionText {
+  position : absolute;
+  width : 100%;
+
+  margin : 0;
+  padding : 0;
+
+  text-align : center;
+  color : white;
+
+  font-family: 'nanumgothic';
+  font-size : 26px;
+}
+
+.grad01 {
+  background : linear-gradient(180deg, #ee955c, #d460a6);
+}
+.grad02 {
+  background : linear-gradient(180deg, #d460a6, #205aee);
+}
+p.infoText {
+  position : absolute;
+
+  margin : 0;
+  padding :0;
+  font-family : 'nanumgothic';
+  font-size : 14px;
+}
+.inputText {
+  position : absolute;
+
+  width : 280px;
+  height : 30px;
+
+  margin : 0;
+  padding : 0;
+  text-align : center;
+
+  background-color: #ccc;
+  font-family : 'consolas';
+  outline-style : none;
+  border-style : none;
+  border-radius : 5px;
+}
+.inputButton {
+  position : absolute;
+  cursor : pointer;
+  width : 70px;
+  height : 30px;
+
+  font-family : 'nanumgothic';
+  font-size : 12px;
+
+  outline-style : none;
+  border-style : none;
+
+  transition : background-color 0.2s ease;
+}
+.inputButton:hover {
+  background-color : #333;
+  color : white;
+}
+/*경고추가*/
+.ButtonIndex1 {
+  top : 150px;
+  left : 60px;
+}
+/*경고삭제*/
+.ButtonIndex2 {
+  top : 150px;
+  left : 140px;
+}
+/*유저삭제*/
+.ButtonIndex3 {
+  top : 150px;
+  left : 270px;
+  color : white;
+  background-color : #ad4141;
+}
+.ButtonIndex3:hover {
+  background-color : #333;
+  color : red;
+}
+/*id 입력*/
+.inputText1 {
+  left:60px;
+  top:100px;
+}
+
+/*id 입력텍스트*/
+.text1 {
+  left : 60px;
+  top : 75px;
+}
+
+
+
+/*스터디룸 입력*/
+/*스터디룸 번호*/
+.text10 {
+  top : 50px;
+  left : 60px;
+}
+/*날짜*/
+.text11 {
+  top : 125px;
+  left : 60px;
+}
+/*시작시간*/
+.text12 {
+  top : 125px;
+  left : 210px;
+}
+/*스터디룸 번호*/
+.inputText10 {
+  top : 75px;
+  left : 60px;
+}
+/*시작시간*/
+.inputText12 {
+  top : 150px;
+  left : 210px;
+  width : 130px;
+}
+/*스터디룸 삭제*/
+.ButtonIndex0 {
+  top : 200px;
+  left : 270px;
+  color : white;
+  background-color : #ad4141;
+}
+.ButtonIndex0:hover {
+  background-color : #333;
+  color : red;
+}
+/*날짜 고르기*/
+.inputDate {
+  position : absolute;
+  top : 150px;
+  left : 60px;
+
+  width : 130px;
+  height : 30px;
+
+  margin : 0;
+
+  text-align : center;
+
+  background-color: #ccc;
+  font-family : 'consolas';
+  outline-style : none;
+  border-style : none;
+  border-radius : 5px;
+
+
+}
+
+@media screen and (max-width:750px) {
+  div#adminDiv { width : 450px; }
+  p.subPartitionText {font-size:22px;}
+
+  p.infoText { font-size : 12px; }
+
+  .inputButton { font-size : 10px; width: 50px; }
+  .ButtonIndex1 { left : 20px;  }
+  .ButtonIndex2 { left : 75px; }
+  .ButtonIndex3 { left : 155px;}
+  .inputText1 { left: 20px; width:185px; }
+  .text1 { left : 20px; font-size:12px; }
+
+  /*스터디룸*/
+  .text10 {left : 20px; top:55px;}
+  .text11 {left : 20px; top:115px;}
+  .text12 {left : 20px; top:180px;}
+  .inputText10 {left : 20px; width:185px;}
+  .inputDate { left : 20px; width :185px; top:135px;}
+  .inputText12 { left : 20px; top:200px; width: 80px;}
+  .ButtonIndex0 { left : 155px; }
+
+}

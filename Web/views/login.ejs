@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel='stylesheet' href='/logincss'>
+</head>
+
+
+<body>
+
+  <div class="loginBackgroundDiv">
+    <div class="loginTitleDiv">
+      <p class="loginTitle"> 「 제 자리입니다만? 」 </p>
+      <p class="loginTitle2"> ~비콘을 이용한 스터디룸 예약 시스템~</p>
+    </div>
+    <div class="loginInputDiv">
+      <form action="/" method="post" autocomplete="off">
+          <input type="text" name="stu_num" style="top:50px;" placeholder="ID" required>
+          <input type="password" name="password" style="top:85px;" placeholder="PASSWORD" required>
+          <input type="submit" value="LOG IN" class="loginButton"  style="top:125px;">
+
+      <!--    <input type="submit" value="ADMIN MODE" style="top:160px;"> -->
+      </form>
+
+      <a href="javascript:showModalDiv(0);clearModalInput(0);" class="registerButton" style="top:200px; ">
+         FORGOT PASSWORD?
+      </a>
+      <a href="javascript:showModalDiv(1);clearModalInput(0);" class="registerButton" style="top:225px; font-size:15px;">
+         CREATE AN ACCOUNT
+      </a>
+    </div>
+      <p class="contactText" style="top:580px;">sqppy@naver.com
+      <p class="contactText" style="top:620px; font-size:15px;">2019 Capstone Project</p>
+      <p class="contactText" style="top:640px;">Powered by 팀머쏘디</p>
+  </div>
+  <!--================================================================================-->
+  <!-- 비밀번호 찾기 -->
+  <div class = "modalDiv">
+    <div class = "modalInputDiv">
+      <p class = "modalText" style="top:30px; left:30px;">FIND PASSWORD</p>
+      <p class = "modalText" style="top:65px; left:35px; font-size:15px">
+        Forgot your password? don't worry!</p>
+        <div class="modalExitButton" style="top:35px; right:30px;" onclick="hideModalDiv(0);clearModalInput(1);">X</div>
+      <form action="/find" method="post" autocomplete="off">
+        <input type="text" name="stu_num" style="top:130px;" placeholder="ID"  required>
+        <input type="text" name="name" style="top:165px;" placeholder="NAME" required>
+        <input type="email" name="email" style="top:210px;" placeholder="EMAIL" required>
+        <input type="tel" name="phone_num" style="top:245px;" placeholder="PHONE NUMBER" required>
+        <input type="submit" value="FIND PASSWORD" class="loginButton" style="top:290px;">
+      </form>
+    </div>
+  </div>
+  <!-- 회원가입 창 -->
+  <div class = "modalDiv">
+    <div class = "modalInputDiv" style="height:450px;">
+      <p class = "modalText" style="top:30px; left:30px;">CREATE AN ACCOUNT</p>
+      <p class = "modalText" style="top:65px; left:35px; font-size:15px"> Welcome, new guest!</p>
+        <div class="modalExitButton" style="top:35px; right:30px;" onclick="hideModalDiv(1);clearModalInput(2)">X</div>
+      <form action="/join" method="post" autocomplete="off">
+        <input type="text" name="stu_num" style="top:110px;" placeholder="ID" required>
+        <input type="text" name="name" style="top:145px;" placeholder="NAME" required>
+        <input type="email" name="email" style="top:190px;" placeholder="EMAIL" required>
+        <input type="tel" name="phone_num" style="top:225px;" placeholder="PHONE NUMBER" required>
+        <input type="password" name="password" style="top:270px;" placeholder="PASSWORD" required>
+        <input type="password" name="passwordconfirm" style="top:305px;" placeholder="PASSWORD CONFIRM" required>
+        <input type="submit" value="REGISTER" class="loginButton" style="top:350px;" onclick="passwordMatch();">
+      </form>
+    </div>
+  </div>
+
+  <script>
+    function showModalDiv(n) {
+          var modaldiv = document.getElementsByClassName("modalDiv")[n];
+          modaldiv.style.display = 'block';
+
+    }
+
+    function hideModalDiv(n) {
+          var modaldiv = document.getElementsByClassName("modalDiv")[n];
+          modaldiv.style.display = 'none';
+    }
+
+    function clearModalInput(n) {
+      var modal = document.getElementsByTagName('form')[n].reset();
+    }
+
+
+
+
+
+  </script>
+
+  <%if(pass == false){%>
+  <script type="text/javascript">
+  alert('아이디와 비밀번호가 틀렸습니다.');
+  pass==true;
+  </script>
+  <%}%>
+
+</body>
+</html>
