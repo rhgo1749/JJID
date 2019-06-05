@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='stylesheet' href='/reservationcss'>
+</head>
+<body>
+
+<div id="totalContainer">
+  <p id="roomNameText"> Error! </p>
+  <p id="roomMinMaxPeople"> ( 4 - 12 명 ) </p>
+  <div id="roomInfo">
+    <div style="background-color:#21769f; top:5px;"></div>
+    <p style="top:5px;">예약 가능</p>
+    <div style="background-color:#ad4141; top:20px;"></div>
+    <p style="top:20px;">예약 불가능</p>
+  </div>
+  <div id="roomStatusContainer">
+    <table id="roomStatusTable">
+      <!-- 맨 위 시간 표시 row -->
+      <tr>
+        <th></th>
+        <th>10</th>
+        <th>11</th>
+        <th>12</th>
+        <th>13</th>
+        <th>14</th>
+        <th>15</th>
+        <th>16</th>
+        <th>17</th>
+        <th>18</th>
+        <th>19</th>
+        <th>20</th>
+      </tr>
+      <!-- today 표시 row -->
+      <tr class="rowIndex">
+        <!--맨 첫 td에는 날짜정보 -->
+        <td class="dateIndex">Error</td>
+        <td class="timeIndex0 backgroundBlue"></td>
+        <td class="timeIndex0 backgroundBlue"></td>
+        <td class="timeIndex0 backgroundBlue"></td>
+        <td class="timeIndex0 backgroundBlue"></td>
+        <td class="timeIndex0 backgroundBlue"></td>
+        <td class="timeIndex0 backgroundBlue"></td>
+        <td class="timeIndex0 backgroundBlue"></td>
+        <td class="timeIndex0 backgroundBlue"></td>
+        <td class="timeIndex0 backgroundBlue"></td>
+        <td class="timeIndex0 backgroundBlue"></td>
+        <td class="timeIndex0 backgroundBlue"></td>
+      </tr>
+      <tr class="rowIndex">
+        <!--맨 첫 td에는 날짜정보 -->
+        <td class="dateIndex">error</td>
+        <td class="timeIndex1 backgroundBlue"></td>
+        <td class="timeIndex1 backgroundBlue"></td>
+        <td class="timeIndex1 backgroundBlue"></td>
+        <td class="timeIndex1 backgroundBlue"></td>
+        <td class="timeIndex1 backgroundBlue"></td>
+        <td class="timeIndex1 backgroundBlue"></td>
+        <td class="timeIndex1 backgroundBlue"></td>
+        <td class="timeIndex1 backgroundBlue"></td>
+        <td class="timeIndex1 backgroundBlue"></td>
+        <td class="timeIndex1 backgroundBlue"></td>
+        <td class="timeIndex1 backgroundBlue"></td>
+      </tr>
+      <tr class="rowIndex">
+        <!--맨 첫 td에는 날짜정보 -->
+        <td class="dateIndex">error</td>
+        <td class="timeIndex2 backgroundBlue"></td>
+        <td class="timeIndex2 backgroundBlue"></td>
+        <td class="timeIndex2 backgroundBlue"></td>
+        <td class="timeIndex2 backgroundBlue"></td>
+        <td class="timeIndex2 backgroundBlue"></td>
+        <td class="timeIndex2 backgroundBlue"></td>
+        <td class="timeIndex2 backgroundBlue"></td>
+        <td class="timeIndex2 backgroundBlue"></td>
+        <td class="timeIndex2 backgroundBlue"></td>
+        <td class="timeIndex2 backgroundBlue"></td>
+        <td class="timeIndex2 backgroundBlue"></td>
+      </tr>
+      <tr class="rowIndex">
+        <!--맨 첫 td에는 날짜정보 -->
+        <td class="dateIndex">error</td>
+        <td class="timeIndex3 backgroundBlue"></td>
+        <td class="timeIndex3 backgroundBlue"></td>
+        <td class="timeIndex3 backgroundBlue"></td>
+        <td class="timeIndex3 backgroundBlue"></td>
+        <td class="timeIndex3 backgroundBlue"></td>
+        <td class="timeIndex3 backgroundBlue"></td>
+        <td class="timeIndex3 backgroundBlue"></td>
+        <td class="timeIndex3 backgroundBlue"></td>
+        <td class="timeIndex3 backgroundBlue"></td>
+        <td class="timeIndex3 backgroundBlue"></td>
+        <td class="timeIndex3 backgroundBlue"></td>
+      </tr>
+      <tr class="rowIndex">
+        <!--맨 첫 td에는 날짜정보 -->
+        <td class="dateIndex">error</td>
+        <td class="timeIndex4 backgroundBlue"></td>
+        <td class="timeIndex4 backgroundBlue"></td>
+        <td class="timeIndex4 backgroundBlue"></td>
+        <td class="timeIndex4 backgroundBlue"></td>
+        <td class="timeIndex4 backgroundBlue"></td>
+        <td class="timeIndex4 backgroundBlue"></td>
+        <td class="timeIndex4 backgroundBlue"></td>
+        <td class="timeIndex4 backgroundBlue"></td>
+        <td class="timeIndex4 backgroundBlue"></td>
+        <td class="timeIndex4 backgroundBlue"></td>
+        <td class="timeIndex4 backgroundBlue"></td>
+      </tr>
+      <tr class="rowIndex">
+        <!--맨 첫 td에는 날짜정보 -->
+        <td class="dateIndex">error</td>
+        <td class="timeIndex5 backgroundBlue"></td>
+        <td class="timeIndex5 backgroundBlue"></td>
+        <td class="timeIndex5 backgroundBlue"></td>
+        <td class="timeIndex5 backgroundBlue"></td>
+        <td class="timeIndex5 backgroundBlue"></td>
+        <td class="timeIndex5 backgroundBlue"></td>
+        <td class="timeIndex5 backgroundBlue"></td>
+        <td class="timeIndex5 backgroundBlue"></td>
+        <td class="timeIndex5 backgroundBlue"></td>
+        <td class="timeIndex5 backgroundBlue"></td>
+        <td class="timeIndex5 backgroundBlue"></td>
+      </tr>
+      <tr class="rowIndex">
+        <!--맨 첫 td에는 날짜정보 -->
+        <td class="dateIndex">error</td>
+        <td class="timeIndex6 backgroundBlue"></td>
+        <td class="timeIndex6 backgroundBlue"></td>
+        <td class="timeIndex6 backgroundBlue"></td>
+        <td class="timeIndex6 backgroundBlue"></td>
+        <td class="timeIndex6 backgroundBlue"></td>
+        <td class="timeIndex6 backgroundBlue"></td>
+        <td class="timeIndex6 backgroundBlue"></td>
+        <td class="timeIndex6 backgroundBlue"></td>
+        <td class="timeIndex6 backgroundBlue"></td>
+        <td class="timeIndex6 backgroundBlue"></td>
+        <td class="timeIndex6 backgroundBlue"></td>
+      </tr>
+      <tr class="rowIndex">
+        <!--맨 첫 td에는 날짜정보 -->
+        <td class="dateIndex">error</td>
+        <td class="timeIndex7 backgroundBlue"></td>
+        <td class="timeIndex7 backgroundBlue"></td>
+        <td class="timeIndex7 backgroundBlue"></td>
+        <td class="timeIndex7 backgroundBlue"></td>
+        <td class="timeIndex7 backgroundBlue"></td>
+        <td class="timeIndex7 backgroundBlue"></td>
+        <td class="timeIndex7 backgroundBlue"></td>
+        <td class="timeIndex7 backgroundBlue"></td>
+        <td class="timeIndex7 backgroundBlue"></td>
+        <td class="timeIndex7 backgroundBlue"></td>
+        <td class="timeIndex7 backgroundBlue"></td>
+      </tr>
+    </table>
+  </div>
+  <div id="whoDiv">
+    <p class="resDivText">예약자 정보</p>
+    <p class="resInfoText" style="top:30px;">학번</p>
+    <div class="whoInfo" style="top:30px;">141414</div>
+    <p class="resInfoText" style="top:80px;">이름</p>
+    <div class="whoInfo" style="top:80px;">김멋엉</div>
+    <p class="resInfoText" style="top:130px;">이메일</p>
+    <div class="whoInfo" style="top:130px;">losin@@@@@</div>
+    <p class="resInfoText" style="top:180px;">연락처</p>
+    <div class="whoInfo" style="top:180px;">01011111111</div>
+  </div>
+  <div id="reserveInputDiv">
+    <p class="resDivText">예약 정보 입력</p>
+    <p class="resInfoText" style="top:45px;left:10px;">날짜</p>
+    <p class="resInfoText" style="top:99px;left:75px;border:none;">부터</p>
+    <p class="resInfoText" style="top:99px;left:185px;border:none;">동안</p>
+    <form action="/reservation/reserve" method="post" id="reserveInputForm">
+      <input type="date" name='date' class="reserveInputClass" style="top:45px;left:60px;width:150px;" onchange="createReserveDate();createStartTime();createUsingTime();">
+      </input>
+      <select name="startTime" class="reserveInputClass" style="top:100px;left:5px;" onchange="createUsingTime();">
+      </select>
+      <select name="usingTime" class="reserveInputClass" style="top:100px;left:115px;">
+      </select>
+      <input type="submit" class="resInputButton2" value="Reserve" style="top:150px; left:10px;"></input>
+      <div class="resInputButton" style="top:150px; right:10px;" onclick="selfClose();">Cancel</div>
+    </form>
+  </div>
+
+</div>
+
+
+
+
+
+<script>
+/*변수 목록*/
+// 스터디룸 고유번호?이름?
+var roomName = "<%=roomName%>";
+// 스터디룸 최소인원
+var roomMinPeople = "<%=min%>";
+var roomMaxPeople = "<%=max%>";
+// 스터디룸 당일예약 인지 아닌지
+var todayFlag = 0;
+// 스터디룸 최대이용시간
+var roomMaxTime = 2;
+// 현재 로그인된 학생의 (id,이름,이메일,폰번호)
+var userid = "<%=stu_num%>";
+var username = "<%=name%>";
+var useremail = "<%=email%>";
+var userphone = "<%=phone_num%>";
+// 날짜-시간-스터디룸으로 검색해서 대표자 존재유무로 1,0 나눈 배열
+
+
+// 스터디룸 이름 텍스트 설정하기
+document.getElementById("roomNameText").innerHTML = "스터디룸 " + roomName + " 예약";
+// 스터디룸 방 인원 텍스트 설정하기
+document.getElementById("roomMinMaxPeople").innerHTML = "( " + roomMinPeople + " - " + roomMaxPeople + " 명)";
+// 예약자 정보 텍스트 설정하기
+document.getElementsByClassName("whoInfo")[0].innerHTML = userid;
+document.getElementsByClassName("whoInfo")[1].innerHTML = username;
+document.getElementsByClassName("whoInfo")[2].innerHTML = useremail;
+document.getElementsByClassName("whoInfo")[3].innerHTML = userphone;
+
+// 각 td별 날짜 동적 설정하기
+var i, j;
+var d = new Date();
+var maxDate = new Date();
+var tempDate = new Date();
+var week = new Array('일','월','화','수','목','금','토');
+
+/*오늘까지만 입력되게 함*/
+var yyyy = d.getFullYear();
+var mm = d.getMonth()+1;
+var dd = d.getDate();
+
+if(dd<10) { dd = '0' + dd; }
+if(mm<10) { mm = '0' + mm; }
+var td = yyyy + '-' + mm + '-' + dd;
+
+document.getElementsByClassName("reserveInputClass")[0].setAttribute("min",td);
+
+/*일주일 후 까지만 입력되게 함*/
+maxDate.setFullYear(d.getYear() + 1900, d.getMonth(), d.getDate()+7);
+
+yyyy = maxDate.getFullYear();
+mm = maxDate.getMonth()+1;
+dd = maxDate.getDate();
+
+if(dd<10) { dd = '0' + dd; }
+if(mm<10) { mm = '0' + mm; }
+var td = yyyy + '-' + mm + '-' + dd;
+
+document.getElementsByClassName("reserveInputClass")[0].setAttribute("max",td);
+
+/*예약 현황 row 날짜 설정*/
+for(i=0; i<8; i++)
+{
+  tempDate.setFullYear( d.getYear()+1900,d.getMonth(),d.getDate()+i )
+
+  var todayMonth = tempDate.getMonth() + 1 + "월 "
+  var todayDate = tempDate.getDate() + "일";
+  var todayDay = " (" + week[tempDate.getDay()] + ")";
+
+  var todayText = todayMonth + todayDate + todayDay;
+
+  document.getElementsByClassName("dateIndex")[i].innerHTML = todayText;
+}
+
+
+/*창 닫아버리기*/
+function selfClose() {
+  self.close();
+}
+
+
+
+
+/*초기에 db에서 예약정보 이런식으로 받아옴*/
+var totalReserveArray2 = "<%=totalReserveArray%>";
+var totalReserveArray = totalReserveArray2.split(',');
+
+
+
+/*=========================*/
+
+/*한줄 잘라내서 쓸 배열 미리 생성*/
+var reserveArray = new Array(document.getElementsByClassName("timeIndex"+ 0).length);
+var selectedDate = 0;
+/*행열을 돌면서 배경색 변경*/
+for(i=0; i<document.getElementsByClassName("rowIndex").length; i++)
+{
+  for(j=0; j<document.getElementsByClassName("timeIndex"+ i).length; j++)
+  {
+    if(totalReserveArray[i * document.getElementsByClassName("timeIndex"+ i).length + j] == 1 )
+    document.getElementsByClassName("timeIndex" + i)[j].style = "background-color:#ad4141";
+  }
+}
+
+/*몇일을 골랐는지 확인하는 index*/
+function createReserveDate() {
+  var inputSelectedDate = document.getElementsByClassName('reserveInputClass')[0].value;
+
+  var inputSelectedDateArray = inputSelectedDate.split("-");
+  var inputSelectedDateObject = new Date(inputSelectedDateArray[0], Number(inputSelectedDateArray[1])-1,inputSelectedDateArray[2]);
+  var betweenDate = Math.ceil( ( inputSelectedDateObject.getTime()-d.getTime() )/ 1000 / 60 / 60 / 24) ;
+
+  // 두 날짜의 차이 저장
+  selectedDate = betweenDate;
+  /*배열에 한칸씩 값을 넣어줌*/
+  for(i=0; i<document.getElementsByClassName("timeIndex"+ selectedDate).length; i++)
+  {
+    /*날짜를 골랐을때 해당 날짜에서 예약된 시간 정보 1줄로 나타낸것*/
+    reserveArray[i] = totalReserveArray[ document.getElementsByClassName("timeIndex"+ selectedDate).length * selectedDate + i ];
+  }
+}
+
+function createStartTime() {
+  var startTime = document.getElementsByName("startTime")[0];
+  /*존재하는거 다 지움*/
+  startTime.options.length = 0;
+  /*그다음 있는거 만들어줌*/
+  for(i=0; i<document.getElementsByClassName("timeIndex"+ selectedDate).length; i++)
+  {
+    /*예약이 없을때 옵션을 만든다*/
+    /*selectedDate==0(오늘) 이고 i+10이 getHours 보다 작으면 안됨*/
+    if(!(selectedDate==0 && (i+10)<d.getHours()))
+    {
+      if(reserveArray[i] == 0)
+      {
+        var opt = document.createElement('option');
+        opt.value = 10 + i;
+        opt.innerHTML = 10 + i + ":00";
+        startTime.appendChild(opt);
+      }
+    }
+  }
+}
+
+function createUsingTime() {
+  var startTime = document.getElementsByName("startTime")[0];
+  var usingTime = document.getElementsByName("usingTime")[0];
+  /*존재하는거 다 지움*/
+  usingTime.options.length = 0;
+  /*그 후 가능한거 만들어줌 자기칸은 가능하니까 + 3칸까지 검색*/
+  //i가 선택한 시간의 index 여야 한다 즉, selected value 가져와서 -10(min값 빼줌) 해주고,
+  startIndex = startTime.options[startTime.selectedIndex].value - 10;
+
+  //for(i=0; i<4; i++)
+  for(i=0; i<roomMaxTime; i++)
+  {
+    if(reserveArray[i + startIndex] == 0)
+    {
+      var opt = document.createElement('option');
+      opt.value = 1 + i;
+      opt.innerHTML = 1 + i + " 시간";
+      usingTime.appendChild(opt);
+    }
+    else break;
+  }
+}
+
+</script>
+</body>
+
+
+</html>

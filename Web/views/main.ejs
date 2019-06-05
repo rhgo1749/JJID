@@ -1,0 +1,708 @@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='stylesheet' href='/maincss'>
+</head>
+<body>
+  <!--navigation bar -->
+   <ul class="navBar"> 
+    <li class="navType1"><a href="/main" class="navButtonType1">Home</a></li>
+    <li class="navType1"><a href="/main#makereservation" class="navButtonType1">예약하기</a></li>
+    <li class="navType1"><a href="/main#myreservation" class="navButtonType1">내 예약</a></li>
+    <li class="navType1"><a href="/main#app" class="navButtonType1">App</a></li>
+
+    <li class="navType2"><a href="/logout" class="navButtonType2">Logout</a></li>
+    <li class="navType2"><a href="javascript:showMyInfoModalDiv(0);basicInfoInput();" class="navButtonType2">My Info</a></li>
+    <li class="navType2">
+      <p class="navLoginText" style="padding-right:0px;">환영합니다,</p>
+      <p class="navLoginText" style="padding-left:0px;">김재성</p>
+    </li>
+   </ul>
+  <!--navigation bar end-->
+
+  <!-- homediv -->
+  <div id="home" class="marginDiv"</div>
+  <div class="homeDiv">
+    <p class="homeTitle">스터디룸 예약 현황</p>
+    <div class="subhomeDiv">
+      <div class="floorWrap">
+        <div class="floorTitleWrap7">
+          <p class="floorTitle">7층</p>
+        </div>
+        <div class="roomWrap">
+          <p class="roomPercent">100%</p><p class="roomPercentSmall">99%</p>
+          <div class="roomGraph"></div>
+          <div class="roomGraphSmall"></div>
+          <p class="roomTitle">01</p>
+        </div>
+        <div class="roomWrap">
+          <p class="roomPercent">100%</p><p class="roomPercentSmall"></p>
+          <div class="roomGraph"></div>
+          <div class="roomGraphSmall"></div>
+          <p class="roomTitle">02</p>
+        </div>
+        <div class="roomWrap">
+          <p class="roomPercent">100%</p><p class="roomPercentSmall"></p>
+          <div class="roomGraph"></div>
+          <div class="roomGraphSmall"></div>
+          <p class="roomTitle">03</p>
+        </div>
+        <div class="roomWrap">
+          <p class="roomPercent">100%</p><p class="roomPercentSmall"></p>
+          <div class="roomGraph"></div>
+          <div class="roomGraphSmall"></div>
+          <p class="roomTitle">04</p>
+        </div>
+        <div class="roomWrap">
+          <p class="roomPercent">100%</p><p class="roomPercentSmall"></p>
+          <div class="roomGraph"></div>
+          <div class="roomGraphSmall"></div>
+          <p class="roomTitle">05</p>
+        </div>
+        <div class="roomWrap">
+          <p class="roomPercent">100%</p><p class="roomPercentSmall"></p>
+          <div class="roomGraph"></div>
+          <div class="roomGraphSmall"></div>
+          <p class="roomTitle">06</p>
+        </div>
+        <div class="roomWrap">
+          <p class="roomPercent">100%</p><p class="roomPercentSmall"></p>
+          <div class="roomGraph"></div>
+          <div class="roomGraphSmall"></div>
+          <p class="roomTitle">07</p>
+        </div>
+        <div class="roomWrap">
+          <p class="roomPercent">100%</p><p class="roomPercentSmall"></p>
+          <div class="roomGraph"></div>
+          <div class="roomGraphSmall"></div>
+          <p class="roomTitle">08</p>
+        </div>
+        <div class="roomWrap">
+          <p class="roomPercent">100%</p><p class="roomPercentSmall"></p>
+          <div class="roomGraph"></div>
+          <div class="roomGraphSmall"></div>
+          <p class="roomTitle">09</p>
+        </div>
+        <div class="roomWrap">
+          <p class="roomPercent">100%</p><p class="roomPercentSmall"></p>
+          <div class="roomGraph"></div>
+          <div class="roomGraphSmall"></div>
+          <p class="roomTitle">10</p>
+        </div>
+        <div class="roomWrap">
+          <p class="roomPercent">100%</p><p class="roomPercentSmall"></p>
+          <div class="roomGraph"></div>
+          <div class="roomGraphSmall"></div>
+          <p class="roomTitle">11</p>
+        </div>
+        <div class="roomWrap">
+          <p class="roomPercent">100%</p><p class="roomPercentSmall"></p>
+          <div class="roomGraph"></div>
+          <div class="roomGraphSmall"></div>
+          <p class="roomTitle">12</p>
+        </div>
+        <div class="roomWrap">
+          <p class="roomPercent">100%</p><p class="roomPercentSmall"></p>
+          <div class="roomGraph"></div>
+          <div class="roomGraphSmall"></div>
+          <p class="roomTitle">13</p>
+        </div>
+      </div>
+      <div class="floorWrap">
+        <div class="floorTitleWrap4">
+          <p class="floorTitle">4층</p>
+        </div>
+        <div class="roomWrap">
+          <p class="roomPercent">100%</p><p class="roomPercentSmall"></p>
+          <div class="roomGraph"></div>
+          <div class="roomGraphSmall"></div>
+          <p class="roomTitle">14</p>
+        </div>
+        <div class="roomWrap">
+          <p class="roomPercent">100%</p><p class="roomPercentSmall"></p>
+          <div class="roomGraph"></div>
+          <div class="roomGraphSmall"></div>
+          <p class="roomTitle">15</p>
+        </div>
+        <div class="roomWrap">
+          <p class="roomPercent">100%</p><p class="roomPercentSmall"></p>
+          <div class="roomGraph"></div>
+          <div class="roomGraphSmall"></div>
+          <p class="roomTitle">16</p>
+        </div>
+        <div class="roomWrap">
+          <p class="roomPercent">100%</p><p class="roomPercentSmall"></p>
+          <div class="roomGraph"></div>
+          <div class="roomGraphSmall"></div>
+          <p class="roomTitle">17</p>
+        </div>
+        <div class="roomWrap">
+          <p class="roomPercent">100%</p><p class="roomPercentSmall"></p>
+          <div class="roomGraph"></div>
+          <div class="roomGraphSmall"></div>
+          <p class="roomTitle">18</p>
+        </div>
+        <div class="roomWrap">
+          <p class="roomPercent">100%</p><p class="roomPercentSmall"></p>
+          <div class="roomGraph"></div>
+          <div class="roomGraphSmall"></div>
+          <p class="roomTitle">19</p>
+        </div>
+        <div class="roomWrap">
+          <p class="roomPercent">100%</p><p class="roomPercentSmall"></p>
+          <div class="roomGraph"></div>
+          <div class="roomGraphSmall"></div>
+          <p class="roomTitle">20</p>
+        </div>
+        <div class="roomWrap">
+          <p class="roomPercent">100%</p><p class="roomPercentSmall"></p>
+          <div class="roomGraph"></div>
+          <div class="roomGraphSmall"></div>
+          <p class="roomTitle">21</p>
+        </div>
+        <div class="roomWrap">
+          <p class="roomPercent">100%</p><p class="roomPercentSmall"></p>
+          <div class="roomGraph"></div>
+          <div class="roomGraphSmall"></div>
+          <p class="roomTitle">22</p>
+        </div>
+        <div class="roomWrap">
+          <p class="roomPercent">100%</p><p class="roomPercentSmall"></p>
+          <div class="roomGraph"></div>
+          <div class="roomGraphSmall"></div>
+          <p class="roomTitle">23</p>
+        </div>
+        <div class="roomWrap">
+          <p class="roomPercent">100%</p><p class="roomPercentSmall"></p>
+          <div class="roomGraph"></div>
+          <div class="roomGraphSmall"></div>
+          <p class="roomTitle">24</p>
+        </div>
+      </div>
+      <div class="floorWrap">
+        <div class="floorTitleWrap1">
+          <p class="floorTitle">1층</p>
+        </div>
+        <div class="roomWrap">
+          <p class="roomPercent">100%</p><p class="roomPercentSmall"></p>
+          <div class="roomGraph"></div>
+          <div class="roomGraphSmall"></div>
+          <p class="roomTitle">25</p>
+        </div>
+        <div class="roomWrap">
+          <p class="roomPercent">100%</p><p class="roomPercentSmall"></p>
+          <div class="roomGraph"></div>
+          <div class="roomGraphSmall"></div>
+          <p class="roomTitle">26</p>
+        </div>
+        <div class="roomWrap">
+          <p class="roomPercent">100%</p><p class="roomPercentSmall"></p>
+          <div class="roomGraph"></div>
+          <div class="roomGraphSmall"></div>
+          <p class="roomTitle">27</p>
+        </div>
+        <div class="roomWrap">
+          <p class="roomPercent">100%</p><p class="roomPercentSmall"></p>
+          <div class="roomGraph"></div>
+          <div class="roomGraphSmall"></div>
+          <p class="roomTitle">28</p>
+        </div>
+        <div class="roomWrap">
+          <p class="roomPercent">100%</p><p class="roomPercentSmall"></p>
+          <div class="roomGraph"></div>
+          <div class="roomGraphSmall"></div>
+          <p class="roomTitle">29</p>
+        </div>
+        <div class="roomWrap">
+          <p class="roomPercent">100%</p><p class="roomPercentSmall"></p>
+          <div class="roomGraph"></div>
+          <div class="roomGraphSmall"></div>
+          <p class="roomTitle">30</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <!-- homediv end-->
+
+  <!-- makereservation -->
+  <div id="makereservation" class="marginDiv"></div>
+  <div class="makereservationDiv">
+    <p class="makereservationTitle">스터디룸 예약하기</p>
+    <div class="submakereservationDiv">
+      <div class="roomSelectDivWrap">
+        <div class="roomSelectDiv">
+          <img src="http://121.132.130.111:3000/images/floor7.png" class="bigImage" alt="floor7">
+          <img src="http://121.132.130.111:3000/images/floor7small.png" class="smallImage" alt="floor7">
+          <!--7층 버튼 -->
+          <div class="roomSelectButton roomButton1" onclick="clickRoomSelectDiv(01);">01</div>
+          <div class="roomSelectButton roomButton2" onclick="clickRoomSelectDiv(02);">02</div>
+          <div class="roomSelectButton roomButton3" onclick="clickRoomSelectDiv(03);">03</div>
+          <div class="roomSelectButton roomButton4" onclick="clickRoomSelectDiv(04);">04</div>
+          <div class="roomSelectButton roomButton5" onclick="clickRoomSelectDiv(05);">05</div>
+          <div class="roomSelectButton roomButton6" onclick="clickRoomSelectDiv(06);">06</div>
+          <div class="roomSelectButton roomButton7" onclick="clickRoomSelectDiv(07);" style="font-size:14px"><strong>07당일</strong></div>
+          <div class="roomSelectButton roomButton8" onclick="clickRoomSelectDiv(08);">08</div>
+          <div class="roomSelectButton roomButton9" onclick="clickRoomSelectDiv(09);">09</div>
+          <div class="roomSelectButton roomButton10" onclick="clickRoomSelectDiv(10);">10</div>
+          <div class="roomSelectButton roomButton11" onclick="clickRoomSelectDiv(11);">11</div>
+          <div class="roomSelectButton roomButton12" onclick="clickRoomSelectDiv(12);">12</div>
+          <div class="roomSelectButton roomButton13" onclick="clickRoomSelectDiv(13);">13</div>
+        </div>
+        <div class="roomSelectDiv">
+          <img src="http://121.132.130.111:3000/images/floor4.png" class="bigImage" alt="floor4">
+          <img src="http://121.132.130.111:3000/images/floor4small.png" class="smallImage" alt="floor4">
+          <!--4층 버튼 -->
+          <div class="roomSelectButton roomButton14" onclick="clickRoomSelectDiv(14);">14</div>
+          <div class="roomSelectButton roomButton15" onclick="clickRoomSelectDiv(15);">15</div>
+          <div class="roomSelectButton roomButton16" onclick="clickRoomSelectDiv(16);">16</div>
+          <div class="roomSelectButton roomButton17" onclick="clickRoomSelectDiv(17);">17</div>
+          <div class="roomSelectButton roomButton18" onclick="clickRoomSelectDiv(18);">18</div>
+          <div class="roomSelectButton roomButton19" onclick="clickRoomSelectDiv(19);">19</div>
+          <div class="roomSelectButton roomButton20" onclick="clickRoomSelectDiv(20);">20</div>
+          <div class="roomSelectButton roomButton21" onclick="clickRoomSelectDiv(21);">21</div>
+          <div class="roomSelectButton roomButton22" onclick="clickRoomSelectDiv(22);">22</div>
+          <div class="roomSelectButton roomButton23" onclick="clickRoomSelectDiv(23);">23</div>
+          <div class="roomSelectButton roomButton24" onclick="clickRoomSelectDiv(24);" style="font-size:16px"><strong>24당일</strong></div>
+        </div>
+        <div class="roomSelectDiv">
+          <img src="http://121.132.130.111:3000/images/floor1.png" class="bigImage" alt="floor1">
+          <img src="http://121.132.130.111:3000/images/floor1small.png" class="smallImage" alt="floor1">
+          <!-- 1층 버튼 -->
+          <div class="roomSelectButton roomButton25" onclick="clickRoomSelectDiv(25);">25</div>
+          <div class="roomSelectButton roomButton26" onclick="clickRoomSelectDiv(26);">26</div>
+          <div class="roomSelectButton roomButton27" onclick="clickRoomSelectDiv(27);">27</div>
+          <div class="roomSelectButton roomButton28" onclick="clickRoomSelectDiv(28);">28</div>
+          <div class="roomSelectButton roomButton29" onclick="clickRoomSelectDiv(29);">29</div>
+          <div class="roomSelectButton roomButton30" onclick="clickRoomSelectDiv(30);">30</div>
+        </div>
+      </div>
+      <div class="floorSelectDiv">
+        <div class="floorSelectButton" onclick="showRoomSelectDiv(0);">7층</div>
+        <div class="floorSelectButton" onclick="showRoomSelectDiv(1);">4층</div>
+        <div class="floorSelectButton" onclick="showRoomSelectDiv(2);">1층</div>
+      </div>
+    </div>
+    <p class="makereservationText">예약하실 스터디룸 번호를 클릭하세요</p>
+  </div>
+  <!--makereservation div end-->
+
+  <!--my reservation div-->
+  <div id="myreservation" class="marginDiv"></div>
+  <div class="myreservationDiv">
+    <p class="myreservationText">내 예약 관리</p>
+    <table class="reserveInfo">
+
+      <thead>
+      <tr>
+        <th>스터디룸</th>
+        <th>예약 날짜</th>
+        <th>예약 시간</th>
+        <th>예약자</th>
+        <th>예약 취소</th>
+      </tr>
+    </thead>
+    <tbody id ="reserveTableBody">
+
+    </tbody>
+    </table>
+  </div>
+  <!--my reservation div end-->
+
+  <!--app div-->
+  <div id="app" class="marginDiv"></div>
+  <div class="appDiv">
+    <a class="appDownload" href="http://121.132.130.111:3000/images/appDownloadAPK.jpg" download="jotdoo" target="_blank">Download APK</a>
+    <p class="appText">어플로 더욱 간편하게</p>
+
+  </div>
+  <!--app div end-->
+
+  <!--contact footer-->
+  <div class="marginDiv"></div>
+  <footer class="contact">
+    <a href="/main" class="contactToTheTop">Top</a>
+    <p class="contactText" style="top:100px;">sqppy@naver.com
+    <p class="contactText" style="top:150px; font-size:15px;">2019 Capstone Project</p>
+    <p class="contactText" style="top:170px;">Powered by 팀머쏘디</p>
+  </footer>
+  <!--contact footer end-->
+
+  <!--modal myinfo-->
+  <div class = "myInfoModalDiv">
+    <div class = "myInfoModalInputDiv" style="height:450px;">
+      <p class = "myInfoModalText" style="top:30px; left:30px;">My Information</p>
+      <p class = "myInfoModalText" style="top:65px; left:35px; font-size:15px"> Let's edit some ! </p>
+        <div class="myInfoModalExitButton" style="top:35px; right:30px;" onclick="hideMyInfoModalDiv(0);clearMyInfoModalInput(0)">X</div>
+      <form action="/main/myInfo" method="post" autocomplete="off">
+        <input type="text" name="stu_num" style="top:110px; background-color:#333; color:white;" placeholder="ID" readonly>
+        <input type="text" name="name" style="top:145px; background-color:#333; color:white;" placeholder="NAME" readonly>
+        <input type="email" name="email" style="top:190px;" placeholder="EMAIL">
+        <input type="tel" name="phone_num" style="top:225px;" placeholder="PHONE NUMBER">
+        <input type="password" name="newpassword" style="top:270px;" placeholder="NEW PASSWORD">
+        <input type="password" name="newpasswordconfirm" style="top:305px;" placeholder="NEW PASSWORD CONFIRM">
+        <input type="password" name="passwordconfirm" style="top:350px;" placeholder="CURRENT PASSWORD CONFIRM" required>
+        <input type="submit" value="REGISTER" class="loginButton" style="top:395px;" onclick="myInfoPasswordMatch(); myInfoOldPasswordCheck()">
+      </form>
+    </div>
+  </div>
+<!-- modal myinfo end -->
+
+
+<script>
+  var stu_num = "<%=stu_num%>";
+  var name ="<%=name%>";
+  var email = "<%=email%>";
+  var phone_num = "<%=phone_num%>";
+  var warn = "<%=warn%>";
+  warn = parseInt(warn);
+    document.getElementsByName("stu_num")[0].value = stu_num;
+    document.getElementsByName("name")[0].value = name;
+    document.getElementsByName("email")[0].value = email;
+    document.getElementsByName("phone_num")[0].value = phone_num;
+
+    //document.getElementsByClassName("navLoginText")[0].innerHTML = "환영합니다, " + name;
+    /*이름 동적으로 설정*/
+    document.getElementsByClassName("navLoginText")[1].innerHTML = " | " + name + "";
+    function userStatus(warn) {
+      if(!warn)
+      {
+          document.getElementsByClassName("navLoginText")[0].innerHTML = "<strong>예약 가능</strong>";
+          document.getElementsByClassName("navLoginText")[0].style.color = "green";
+      }
+      else
+      {
+          document.getElementsByClassName("navLoginText")[0].innerHTML = "<strong>예약 불가능</strong>";
+          document.getElementsByClassName("navLoginText")[0].style.color = "red";
+      }
+    }
+    userStatus(warn);
+  /*--------------------*/
+
+    function basicInfoInput() {
+      document.getElementsByName("stu_num")[0].value = stu_num;
+      document.getElementsByName("name")[0].value = name;
+      document.getElementsByName("email")[0].value = email;
+      document.getElementsByName("phone_num")[0].value = phone_num;
+    }
+
+
+  /*예약현황 그래프로 표시*/
+  /*방별 예약현황 문자열*/
+  /*var resIndex = [
+    "0000111111010110011000111111111110000000000010111111000000000000001111111111111111111111",
+    "0000111111010110011000111111111110000000000010111111000000000000001111111111111111111111",
+    "0000111111010110011000111111111110000000000010111111000000000000001111111111111111111111",
+    "0000111111010110011000111111111110000000000010111111000000000000001111111111111111111111",
+    "0000111111010110011000111111111110000000000010111111000000000000001111111111111111111111",
+    "0000111101010110011000111111111110000000000010111111000000000000001111111111111111111111",
+    "0000111101010110011000111111111110000000000010111111000000000000001111111111111111111111",
+    "0000111101010110011000111111111110000000000010111111000000000000001111111111111111111111",
+    "0000111101010110011000111111111110000000000010111111000000000000001111111111111111111111",
+    "000011110101011001100011111111111111111111110111111000000000000001111111111111111111111",
+    "0000111101010110011000111111111110000000000010111111000000000000001111111111111111111111",
+    "0000111101010110011000111111111110000000000010111111000000000000001111111111111111111111",
+    "0000111101010110011000111111111110000000000010111111000000000000001111111111111111111111",
+    "0000111101010110011000111111111110000000000010111111000000000000001111111111111111111111",
+    "0000111101010110011000111111111110000000000010111111000000000000001111111111111111111111",
+    "0000111101010110011000111111111110000000000010111111000000000000001111111111111111111111",
+    "0000111101010110011000111111111110000000000010111111000000000000001111111111111111111111",
+    "0000111101010110011000111111111110000000000010111111000000000000001111111111111111111111",
+    "0000111101010110011000111111111110000000000010111111001111111000001111111111111111111111",
+    "0000111101010110011000111111111110000000000010111111000000000000001111111111111111111111",
+    "0000111101010110011000111111111110000000000010111111000000000000001111111111111111111111",
+    "0000111101010110011000111111111110000000000010111111000000000000001111111111111111111111",
+    "0000111101010110011000111111111110000000000010111111000000000000001111111111111111111111",
+    "0000111101010110011000111111111110000000000010111111000000000000001111111111111111111111",
+    "1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111",
+    "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "1111111111111111111111111111111111111111111111111111111111111111111111111111110000000000",
+    "0000111100000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "0000111101010110011000000000000000000000000000000000000000000000000000000000000000000000",
+    "0000000000000000000000000000000000000000000000000000000000000000001111111111111111111111",
+  ];*/
+  /*방별 예약현황 문자열*/
+
+  /*방별 예약현황 문자열*/
+  /*
+  var resIndex25 ="011010111011101011101110101110111010111011101011101110101110111010111011101011101110101110111010111011101011101110101110111010111011101011101110101110111010111011101011101110101110111010111011"
+  var resIndex26 ="011100001111110000111111000011111100001111110000111111000011111100001111110000111111000011111100001111110000111111000011111100001111110000111111000011111100001111110000111111000011111100001100"
+  var resIndex27 ="011100001111110000111111000011111100001111110000111111000011111100001111110000111111000011111100001111110000111111000011111100001111110000111111000011111100001111110000111111000011111100001100"
+  var resIndex28 ="011100001111110000111111000011111100001111110000111111000011111100001111110000111111000011111100001111110000111111000011111100001111110000111111000011111100001111110000111111000011111100001100"
+  var resIndex29 ="111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111"
+  var resIndex30 ="001100001111110000111111000011111100001111110000111111000011111100001111110000111111000011111100001111110000111111000011111100001111110000111111000011111100001111110000111111000011111100001100"*/
+
+
+var resIndex = ["<%=resIndex1%>", "<%=resIndex2%>", "<%=resIndex3%>",
+"<%=resIndex4%>", "<%=resIndex5%>", "<%=resIndex6%>", "<%=resIndex7%>",
+"<%=resIndex8%>", "<%=resIndex9%>", "<%=resIndex10%>", "<%=resIndex11%>",
+"<%=resIndex12%>", "<%=resIndex13%>", "<%=resIndex14%>", "<%=resIndex15%>",
+"<%=resIndex16%>", "<%=resIndex17%>", "<%=resIndex18%>", "<%=resIndex19%>",
+"<%=resIndex20%>", "<%=resIndex21%>", "<%=resIndex22%>", "<%=resIndex23%>",
+"<%=resIndex24%>", "<%=resIndex25%>","<%=resIndex26%>","<%=resIndex27%>",
+"<%=resIndex28%>","<%=resIndex29%>","<%=resIndex30%>" ];
+
+/*
+for(var i=0;i<25;i++)
+{
+  resIndex[i] = resIndex[i].replace(/,/gi, "");
+}*/
+for(var i=0;i<30;i++)
+{
+  resIndex[i] = resIndex[i].replace(/,/gi, "");
+}
+
+  function drawResGraph() {
+    for(var i=0; i<30; i++)
+    {
+      var resCount = resIndex[i].match(/1/g);
+      /*0만있는 배열이 들어올 경우*/
+      if(!resCount) resCount = '0';
+      /*percent 초기화*/
+      var resPercent = 0;
+      if (resIndex[i].length != 0 && resCount.length != 0)
+      {
+        resPercent = Number( Math.floor( (resCount.length / resIndex[i].length) * 100 ));
+      }
+      var count = (resIndex[i].match(/1/g) || []).length;
+      if(count == 0)
+        resPercent = 0;
+
+      /* 퍼센트 텍스트 변경하기 */
+      document.getElementsByClassName("roomPercent")[i].innerHTML = resPercent + "%";
+      document.getElementsByClassName("roomPercentSmall")[i].innerHTML = resPercent + "%";
+      /* 퍼센트 텍스트 위치 옮겨주기 */
+      document.getElementsByClassName("roomPercent")[i].style.bottom = resPercent + 30 +"px";
+      document.getElementsByClassName("roomPercentSmall")[i].style.bottom = resPercent*0.8 + 20 +"px";
+      /* 막대그래프 크기 설정하기 */
+      document.getElementsByClassName("roomGraph")[i].style.height = resPercent + "px";
+      document.getElementsByClassName("roomGraphSmall")[i].style.height = resPercent*0.8 + "px";
+
+      /* 막대그래프 색 설정하기 */
+      if (resPercent < 31 )
+      {
+        document.getElementsByClassName("roomGraph")[i].style.backgroundColor = "#21769f";
+        document.getElementsByClassName("roomGraphSmall")[i].style.backgroundColor = "#21769f";
+      }
+      else if (resPercent < 81)
+      {
+        document.getElementsByClassName("roomGraph")[i].style.backgroundColor = "#1ea12b";
+        document.getElementsByClassName("roomGraphSmall")[i].style.backgroundColor = "#1ea12b";
+      }
+      else
+      {
+        document.getElementsByClassName("roomGraph")[i].style.backgroundColor = "#ad4141";
+        document.getElementsByClassName("roomGraphSmall")[i].style.backgroundColor = "#ad4141";
+      }
+    }
+  }
+  drawResGraph();
+
+
+
+  /*갈아엎어버린 makereservation div*/
+  function showRoomSelectDiv(n) {
+    for(var i=0; i<3; i++)
+    {
+      document.getElementsByClassName("roomSelectDiv")[i].style.display = "none";
+
+      document.getElementsByClassName("floorSelectButton")[i].setAttribute("class", "floorSelectButton");
+    }
+    document.getElementsByClassName("roomSelectDiv")[n].style.display = "block";
+    document.getElementsByClassName("floorSelectButton")[n].className += " fSBhover";
+    //document.getElementsByClassName("floorSelectButton")[n].style.backgroundColor = "black";
+    //document.getElementsByClassName("floorSelectButton")[n].style.color = "white";
+  }
+
+
+  /*초기값 7층으로*/
+  showRoomSelectDiv(0);
+
+
+  /*div 클릭시 이벤트*/
+  function clickRoomSelectDiv(n) {
+    if(n<10) n= '0' + n;
+    var popupX = (screen.width / 2) - (550 / 2);
+    var popupY = (screen.height / 2) - (640 /2) -80;
+    if(n<25)
+      window.open("/reservation?id="+ n, "스터디룸 "+ n, "width=550,height=640,location=no,status=no,scrollbars=no,top="+popupY+",left="+popupX);
+    else {
+      window.open("/reservation24?id="+ n, "스터디룸 "+ n, "width=550,height=640,location=no,status=no,scrollbars=no,top="+popupY+",left="+popupX);
+    }
+  }
+
+  /*지금 시간에 사용중인 장소 배경색 변경(01~24)*/
+  function usingRoomSelect() {
+    var availTime = 11;
+    // 방 하나당 오늘의 정보 임시 저장용
+    var usingRoomIndex = new Array();
+    var usingRoomDate = new Date();
+    // 현재시간을 받아와서 -10 ( 범위 -10 ~ 14 )
+    var usingRoomHour = usingRoomDate.getHours() - 10;
+    /*방 24개만큼 반복*/
+    for(var i=0; i<24; i++ )
+    {
+      /*방 1개의 오늘 정보를 받아온다.*/
+      for(var j=0; j<availTime; j++)
+      {
+        usingRoomIndex[j] = resIndex[i].substring(j,j+1);
+      }
+      if(usingRoomHour >= 0 && usingRoomHour <= 10)
+      {
+        if(usingRoomIndex[usingRoomHour] == 1)
+          document.getElementsByClassName("roomSelectButton")[i].style.backgroundColor = "#ad4141";
+      }
+    }
+  }
+  usingRoomSelect();
+
+  function usingRoom24Select() {
+    var availTime = 24;
+    // 방 하나당 오늘의 정보 임시 저장용
+    var usingRoomIndex = new Array();
+    var usingRoomDate = new Date();
+    // 현재시간을 받아와서  ( 범위 0 ~ 24 )
+    var usingRoomHour = usingRoomDate.getHours();
+    /*방 6개만큼 반복*/
+    for(var i=24; i<30; i++ )
+    {
+      /*방 1개의 오늘 정보를 받아온다.*/
+      for(var j=0; j<availTime; j++)
+      {
+        usingRoomIndex[j] = resIndex[i].substring(j,j+1);
+      }
+      if(usingRoomHour >= 0 && usingRoomHour <= 24)
+      {
+        if(usingRoomIndex[usingRoomHour] == 1)
+          document.getElementsByClassName("roomSelectButton")[i].style.backgroundColor = "#ad4141";
+      }
+    }
+  }
+  usingRoom24Select();
+
+  /*modal function*/
+  function showMyInfoModalDiv(n) {
+        var modaldiv = document.getElementsByClassName("myInfoModalDiv")[n];
+        modaldiv.style.display = 'block';
+  }
+
+  function hideMyInfoModalDiv(n) {
+        var modaldiv = document.getElementsByClassName("myInfoModalDiv")[n];
+        modaldiv.style.display = 'none';
+  }
+  function clearMyInfoModalInput(n) {
+    var modal = document.getElementsByTagName('form')[n].reset();
+  }
+  /*
+  function myInfoPasswordMatch() {
+    var password = document.getElementsByName('newpassword')[0].value;
+    var passwordconfirm = document.getElementsByName('newpasswordconfirm')[0].value;
+
+    if(password != passwordconfirm) alert("새 비번 틀림");
+  }
+
+  /*현재비번값
+  var currentpassword = '1234';
+
+  function myInfoOldPasswordCheck() {
+    var password = document.getElementsByName('password')[0].value;
+
+    if(password != currentpassword) alert("현재 비번 틀림");
+  }*/
+
+  /*현황 테이블 동적 생성(최대 8)*/
+  var tableLength = "<%=length%>";
+  function ymd(d){
+    var text = "";
+    text += d.getFullYear() + "-";
+    text += (d.getMonth() + 1) + "-";
+    text += d.getDate();
+    return text;
+  }
+  var room_num = ["<%=room_num0%>","<%=room_num1%>","<%=room_num2%>","<%=room_num3%>",
+  "<%=room_num4%>","<%=room_num5%>","<%=room_num6%>","<%=room_num7%>"];
+  var r_date = ["<%=r_date0%>","<%=r_date1%>","<%=r_date2%>","<%=r_date3%>",
+  "<%=r_date4%>","<%=r_date5%>","<%=r_date6%>", "<%=r_date7%>"];
+  var r_start = ["<%=r_time0%>","<%=r_time1%>","<%=r_time2%>","<%=r_time3%>",
+  "<%=r_time4%>","<%=r_time5%>","<%=r_time6%>","<%=r_time7%>"];
+  var r_using = ["<%=r_using_time0%>",
+  "<%=r_using_time1%>",
+  "<%=r_using_time2%>",
+  "<%=r_using_time3%>",
+  "<%=r_using_time4%>",
+  "<%=r_using_time5%>",
+  "<%=r_using_time6%>",
+  "<%=r_using_time7%>" ];
+  var r_name = ["<%=r_name0%>", "<%=r_name1%>", "<%=r_name2%>", "<%=r_name3%>",
+  "<%=r_name4%>", "<%=r_name5%>", "<%=r_name6%>", "<%=r_name7%>"];
+
+  /*표시해줄 정보*/ //parseInt(s2)
+  var dbRoomName = [room_num[0],room_num[1],room_num[2],room_num[3],
+  room_num[4],room_num[5],room_num[6],room_num[7]];
+  var dbDate = [r_date[0], r_date[1], r_date[2], r_date[3],
+  r_date[4], r_date[5], r_date[6], r_date[7]];
+  /*var dbDate = [ymd(r_date[0]), ymd(r_date[1]), ymd(r_date[2]), ymd(r_date[3]),
+  ymd(r_date[4]), ymd(r_date[5]), ymd(r_date[6]), ymd(r_date[7])];*/
+  var dbStartTime = [r_start[0],r_start[1],r_start[2],r_start[3],
+  r_start[4],r_start[5],r_start[6],r_start[7]];
+  var dbEndTime = [r_using[0],r_using[1],r_using[2],r_using[3],r_using[4],r_using[5],r_using[6],r_using[7]];
+  var dbUserName = [r_name[0], r_name[1], r_name[2], r_name[3],
+  r_name[4], r_name[5], r_name[6], r_name[7] ];
+
+
+var resRoomName = "<td>" + "</td>";
+var resDate = "<td>" + "</td>";
+var resTime = "<td>" + "</td>";
+var resUserName = "<td>" + "</td>";
+
+function checkCancel(form) {
+  if(confirm('정말 취소하시겠습니까?')) {
+    form.submit();
+  }
+  else {
+
+  }
+}
+
+function createCurRes() {
+  var curResTable = document.getElementById("reserveTableBody");
+  // 테이블 개수만큼 생성
+  for(i=0; i<tableLength; i++)
+  {
+    /*변수 문자열 만들기*/
+    resRoomName = "<td>" + dbRoomName[i] + "</td>";
+    resDate = "<td>" + dbDate[i] + "</td>";
+    resTime = "<td>" + dbStartTime[i] + ":00 - " + dbEndTime[i] + ":00" + "</td>";
+    resUserName = "<td>" + dbUserName[i] + "</td>";
+
+    /*행 만들기*/
+    addRow = curResTable.insertRow(curResTable.rows.length);
+
+    cell1 = addRow.insertCell(0);
+      cell1.innerHTML = resRoomName;
+    cell2 = addRow.insertCell(1);
+      cell2.innerHTML = resDate;
+    cell3 = addRow.insertCell(2);
+      cell3.innerHTML = resTime;
+    cell4 = addRow.insertCell(3);
+      cell4.innerHTML = resUserName;
+    cell5 = addRow.insertCell(4);
+      cell5.innerHTML = '<td><form action=\"/main/cancel\" method=\"post\" class=\"resForm\"><input type=\"text\" name=\"resindex\" style=\"display:none;\" value=\"'+i+'\"><input type=\"button\" class=\"resCancel\" onclick=\"checkCancel(this.form);\"   value=\"취소\"></form></td>';
+  }
+}
+createCurRes();
+
+
+</script>
+
+
+
+
+
+
+</body>
+</html>

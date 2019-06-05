@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel='stylesheet' href='/admincss'>
+</head>
+
+<body>
+<div id = "adminDiv">
+  <div id="navBar">
+    <p class="adminTitle">< 관리자 모드 ></p>
+    <!-- 로그아웃 링크 걸기 -->
+    <div id="adminLogoutButton" onclick="window.open('http://121.132.130.111:3000','_self')">Logout</div>
+  </div>
+  <!-- 왼쪽 div -->
+  <div class="partitionAdminDiv" style="left:0px;width:50%;">
+    <!-- 위쪽 div 학생 설명용 -->
+    <div class="subPartitionAdminDiv grad01" style="top:0px;">
+      <p class="subPartitionText" style="padding-top : 50px;">사용자의 권한을<br>관리하세요.<br><br>혹은 사용자를<br>삭제할 수도 있습니다.</p>
+    </div>
+    <!-- 아래쪽 div 스터디룸 input -->
+    <div class="subPartitionAdminDiv" style="top:280px;">
+      <p class="infoText text10">스터디룸 번호 입력</p>
+      <p class="infoText text11">날짜 입력</p>
+      <p class="infoText text12">예약시간 입력</p>
+      <form action="/admin/roomManage" method="post" autocomplete="off">
+        <input type="text" name="roomid" class="inputText inputText10">
+        <input type="date" name="roomdate" class="inputDate">
+        <input type="text" name="usingtime" class="inputText inputText12">
+        <input type="button" class="inputButton ButtonIndex0" value="예약 삭제" onclick="checkAction(this.form, 0)">
+      </form>
+    </div>
+  </div>
+  <!-- 오른쪽 div -->
+  <div class="partitionAdminDiv" style="right:0px;width:50%;">
+    <!-- 위쪽 div 학생 input -->
+    <div class="subPartitionAdminDiv" style="top:0px;">
+      <p class="infoText text1">ID 입력</p>
+      <form action="/admin/userManage" method="post" autocomplete="off">
+        <input type="text" name="userid" class="inputText inputText1">
+        <input type="text" name="buttonindex" style="display:none;">
+        <input type="button" class="inputButton ButtonIndex1" value="경고 부여" onclick="checkAction(this.form, 1)">
+        <input type="button" class="inputButton ButtonIndex2" value="경고 삭제" onclick="checkAction(this.form, 2)">
+        <input type="button" class="inputButton ButtonIndex3" value="유저 삭제" onclick="checkAction(this.form, 3)">
+      </form>
+    </div>
+    <!-- 아래쪽 div 스터디룸 설명용 -->
+    <div class="subPartitionAdminDiv grad02" style="top:275px;">
+      <p class="subPartitionText"style="padding-top : 80px;">왼쪽에서는<br><br>스터디룸 예약을<br>삭제할 수 있습니다.</p>
+    </div>
+  </div>
+  </div>
+
+
+
+<script>
+
+function checkAction(form, n) {
+  var msg = document.getElementsByClassName("inputButton")[n].value;
+  document.getElementsByName("buttonindex")[0].value = n;
+
+  if(confirm( msg + ' 하시겠습니까?')) {
+    form.submit();
+  }
+  else {
+  }
+}
+</script>
+</body>
+</html>

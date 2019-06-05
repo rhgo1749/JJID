@@ -1,0 +1,223 @@
+
+/*폰트선언*/
+@font-face {
+  font-family : 'nanumgothic';
+  src : url('http://121.132.130.111:3000/fonts/NanumGothic.woff') format('woff'),
+  url('http://121.132.130.111:3000/fonts/NanumGothic.eot') format('eot'),
+  url('http://121.132.130.111:3000/fonts/NanumGothic.ttf') format('truetype');
+}
+@font-face {
+  font-family : 'consolas';
+  src : url('http://121.132.130.111:3000/fonts/consolas.woff') format('woff'),
+  url('http://121.132.130.111:3000/fonts/consolas.eot') format('eot'),
+  url('http://121.132.130.111:3000/fonts/consolas.ttf') format('truetype');
+}
+
+/*배경 사진용 Div*/
+div.loginBackgroundDiv {
+  max-width : 1500px;
+  height : 700px;
+  margin : auto;
+
+  position : relative;
+  background-image : url("http://121.132.130.111:3000/images/loginBackgroundDivImage.png");
+  background-position : center;
+  background-repeat : no-repeat;
+
+}
+/*타이틀 작성용 Div*/
+div.loginTitleDiv{
+  width : 320px;
+  height : 80px;
+
+  position : absolute;
+  top : 120px;
+  left : 50%;
+  transform:translateX(-50%);
+
+}
+/*제 자리입니다만 텍스트 표시용*/
+p.loginTitle{
+  text-align : center;
+  font-size : 36px;
+  margin : 0;
+  padding : 0;
+
+  font-family : 'nanumgothic';
+
+  position : absolute;
+  left : 50%;
+  transform:translateX(-50%);
+  width : 100%;
+
+  top : 0;
+
+  color : white;
+}
+p.loginTitle2{
+  text-align : center;
+  font-size : 16px;
+  margin : 0;
+  padding : 0;
+
+  font-family : 'nanumgothic';
+
+  position : absolute;
+  left : 50%;
+  transform:translateX(-50%);
+  width : 100%;
+
+  top : 50px;
+
+  color : white;
+}
+/*로그인 Input 요소용 Div*/
+div.loginInputDiv{
+  width : 300px;
+  height : 300px;
+
+  top : 200px;
+  position : absolute;
+  left : 50%;
+  transform:translateX(-50%);
+  background-color : rgba(0, 0, 0, 0.8);
+}
+/*입력창 두개 스타일*/
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"] {
+  position : absolute;
+  left : 50%;
+  transform:translateX(-50%);
+
+  width : 60%;
+  height : 30px;
+
+  margin : 0;
+  padding : 0;
+  text-align : center;
+
+  background-color: #ccc;
+  font-family : 'consolas';
+  outline-style : none;
+  border-style : none;
+  border-radius : 5px;
+}
+/*로그인 버튼 스타일*/
+input[type="submit"].loginButton {
+  position : absolute;
+  left : 50%;
+  transform:translateX(-50%);
+
+  width : 60%;
+  height : 30px;
+
+  margin : 0;
+  padding : 0;
+  text-align : center;
+
+  color : white;
+  background-color: #ad4141;
+  font-family : 'consolas';
+  outline-style : none;
+  border-style : none;
+  border-radius : 5px;
+
+  cursor : pointer;
+
+  transition: background-color 0.6s ease;
+}
+input[type="submit"].loginButton:hover {
+  background-color : #771d1d;
+}
+/*회원가입 및 비번찾기 버튼*/
+.registerButton {
+  position : absolute;
+
+  width : 100%;
+  left : 50%;
+  transform:translateX(-50%);
+
+  margin : 0;
+  padding : 0;
+  text-align : center;
+  text-decoration : none;
+
+  color : white;
+  font-family : 'consolas';
+
+  cursor : pointer;
+
+  transition: color 0.6s ease;
+}
+.registerButton:hover {
+  color : #ad4141;
+}
+/*제작자 정보*/
+p.contactText {
+  color : white;
+  font-size : 16px;
+  text-align : right;
+
+  position : absolute;
+
+  right : 20px;
+}
+/*================================================================================*/
+/*modal 구현*/
+div.modalDiv {
+  position : fixed;
+  top : 0px;
+  left : 0px;
+
+  width : 100%;
+  height : 100%;
+
+  background-color : rgba(0, 0, 0, 0.8);
+
+  z-index : +1;
+
+  display : none;
+}
+div.modalInputDiv {
+  position : absolute;
+
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  width : 400px;
+  height: 400px;
+
+  background-color:white;
+}
+p.modalText {
+  position : absolute;
+
+  margin : 0;
+  padding : 0;
+
+  font-family : 'consolas';
+  font-size : 28px;
+  text-align : left;
+}
+div.modalExitButton {
+  position : absolute;
+
+  padding : 0;
+  margin : 0;
+
+  width : 20px;
+  height : 20px;
+
+  text-align : center;
+  line-height : 20px;
+  cursor : pointer;
+
+  font-size : 22px;
+  font-family : 'nanumgothic';
+
+  border : 1px solid black;
+}
+/*modal 끝*/
