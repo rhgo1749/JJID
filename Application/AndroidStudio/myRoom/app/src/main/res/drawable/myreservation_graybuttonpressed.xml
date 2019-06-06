@@ -1,0 +1,13 @@
+<?xml version ="1.0" encoding ="utf-8"?><!--  Learn More about how to use App Actions: https://developer.android.com/guide/actions/index.html -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:drawable="@drawable/drawOptiGray" >
+        <!--   눌린 후 버튼이미지 파일명을 써준다.-->
+        <!-- pressed -->
+    </item>
+    <item android:state_pressed="false" android:drawable="@drawable/drawOpti" >
+
+        <!--  눌리기 전 버튼이미지 파일명을 써준다..-->
+
+        <!-- default -->
+    </item>
+</selector>

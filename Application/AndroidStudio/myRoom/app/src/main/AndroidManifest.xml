@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myroom">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <service
+            android:name=".Services.RestartService"
+            android:enabled="true"
+            android:exported="true"></service>
+        <service
+            android:name=".Services.MyService"
+            android:enabled="true"
+            android:exported="true" />
+        <receiver android:name="com.example.myroom.ServiceReceivers.AlarmReceiver"/>
+        <receiver android:name=".ServiceReceivers.RebootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".Activities.BaseActivity" />
+        <activity android:name=".Activities.FirstAutoLogin_Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activities.ManualLoginActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".Activities.MainHomeActivity"
+            android:label="@string/title_activity_main_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activities.MainReservationActivity"
+            android:label="@string/title_activity_main_reservation"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activities.MainReservationActivity_step1"
+            android:label="@string/title_activity_main_reservation"
+            android:parentActivityName=".Activities.MainReservationActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activities.MainReservationActivity_step2"
+            android:label="@string/title_activity_main_reservation"
+            android:parentActivityName=".Activities.MainReservationActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Activities.MainSettingsActivity"
+            android:label="@string/title_activity_main_setting"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activities.AlarmSettingsActivity"
+            android:label="@string/title_activity_main_setting"
+            android:parentActivityName=".Activities.MainSettingsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activities.LogoutPopupActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/popupTheme" />
+        <activity
+            android:name=".Activities.FAQMenuActivity"
+            android:label="@string/title_activity_faq"
+            android:parentActivityName=".Activities.MainSettingsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activities.FAQDetailActivity"
+            android:label="@string/title_activity_faq"
+            android:parentActivityName=".Activities.MainSettingsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activities.MyReservationStatusActivity"
+            android:label="@string/temp_attend_title"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activities.MyReservationDetailStatusActivity"
+            android:label="@string/temp_attend_detail_title"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activities.AttendActivity"
+            android:label="@string/title_activity_AttendBtn"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>
