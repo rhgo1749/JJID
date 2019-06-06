@@ -192,7 +192,10 @@ public class AttendActivity extends BaseActivity implements BeaconConsumer {
                 MainHomeActivity.studyRoomArr[24].getName(),MainHomeActivity.studyRoomArr[25].getName(),
                 MainHomeActivity.studyRoomArr[26].getName(),MainHomeActivity.studyRoomArr[27].getName(),
                 MainHomeActivity.studyRoomArr[28].getName(),MainHomeActivity.studyRoomArr[29].getName(),
-                MainHomeActivity.studyRoomArr[30].getName()};
+                MainHomeActivity.studyRoomArr[30].getName(),MainHomeActivity.studyRoomArr[31].getName(),
+                MainHomeActivity.studyRoomArr[32].getName(),MainHomeActivity.studyRoomArr[33].getName(),
+                MainHomeActivity.studyRoomArr[34].getName(),MainHomeActivity.studyRoomArr[35].getName(),
+                MainHomeActivity.studyRoomArr[36].getName()};
 
         ArrayAdapter adpSelect_Room= new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item,studyRoomName);
 
