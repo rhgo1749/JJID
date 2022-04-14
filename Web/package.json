@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/web-n/Nodejs#readme",
   "dependencies": {
-    "async": "^3.0.1",
+    "async": "^3.2.2",
     "body-parser": "^1.19.0",
     "cookie-parser": "^1.4.4",
     "date-utils": "^1.2.21",
