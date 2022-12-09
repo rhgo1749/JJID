@@ -21,11 +21,11 @@
   "homepage": "https://github.com/web-n/Nodejs#readme",
   "dependencies": {
     "async": "^3.0.1",
-    "body-parser": "^1.19.0",
+    "body-parser": "^1.20.1",
     "cookie-parser": "^1.4.4",
     "date-utils": "^1.2.21",
     "ejs": "^2.6.1",
-    "express": "^4.16.4",
+    "express": "^4.18.2",
     "express-mysql-session": "^2.1.0",
     "express-session": "^1.16.1",
     "jade": "^1.11.0",
